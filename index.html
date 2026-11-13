@@ -4,41 +4,55 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#101827">
-<meta name="description" content="Sign in to Convex LLC using your organisation account.">
-<title>Sign in · Convex, LLC</title>
+<meta name="description" content="Sign in using your organisation account.">
+<title>Sign in</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{color-scheme:dark;--bg:#0b1220;--muted:#9aabc0;--text:#f4f7fb}
-*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:"DM Sans",system-ui,sans-serif;color:var(--text);background:radial-gradient(ellipse at 50% 0%,#1b3150 0,transparent 52%),var(--bg);display:grid;place-items:center;padding:28px}
-.shell{width:min(100%,440px)}.brand{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:30px;font-size:20px;font-weight:700;letter-spacing:-.5px}
-.mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(145deg,#78aaff,#3868d9);display:grid;place-items:center;box-shadow:0 8px 28px #3868d955}.mark svg{width:22px;height:22px}
+*{box-sizing:border-box}
+html{min-height:100%;background:var(--bg)}
+body{margin:0;min-height:100vh;min-height:100svh;font-family:"DM Sans",system-ui,sans-serif;color:var(--text);background:radial-gradient(ellipse at 50% 0%,#1b3150 0,transparent 52%),var(--bg);display:flex;flex-direction:column;align-items:center;padding:28px 18px 20px}
+.shell{width:min(100%,440px);margin:auto}
 .card{background:linear-gradient(180deg,#142238,#101a2a);border:1px solid #2a3b52;border-radius:22px;padding:38px;box-shadow:0 28px 90px #0006}
-h1{font-size:27px;letter-spacing:-1px;margin:0 0 9px;text-align:center}.sub{color:var(--muted);text-align:center;font-size:14px;line-height:1.6;margin:0 0 30px}
+h1{font-size:27px;letter-spacing:-1px;margin:0 0 9px;text-align:center}
+.sub{color:var(--muted);text-align:center;font-size:14px;line-height:1.6;margin:0 0 30px}
 .domain{display:inline-flex;align-items:center;gap:7px;border:1px solid #2b405a;background:#17283e;border-radius:999px;padding:7px 12px;font-size:12px;color:#c7d8ee;margin:0 auto 26px;position:relative;left:50%;transform:translateX(-50%);white-space:nowrap}
+.providers{display:grid;gap:12px}
+.provider{width:100%;min-height:54px;border:1px solid #34465e;border-radius:12px;background:#f8fafc;color:#172033;font:600 15px "DM Sans",sans-serif;display:flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;transition:transform .15s,box-shadow .15s,background .15s}
+.provider:hover{transform:translateY(-1px);box-shadow:0 8px 24px #0003;background:#fff}
+.provider:focus-visible{outline:3px solid #78aaff;outline-offset:3px}
+.provider svg{width:21px;height:21px;flex:none}
+footer{width:100%;display:flex;justify-content:center;align-items:center;margin-top:0;padding:16px 0 2px;color:#8fa1b8;font-size:12px}
+.status{display:inline-flex;align-items:center;gap:8px}
 .dot{width:7px;height:7px;background:#55d6a3;border-radius:50%;box-shadow:0 0 10px #55d6a388}
-.providers{display:grid;gap:12px}.provider{width:100%;min-height:54px;border:1px solid #34465e;border-radius:12px;background:#f8fafc;color:#172033;font:600 15px "DM Sans",sans-serif;display:flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;transition:transform .15s,box-shadow .15s,background .15s}.provider:hover{transform:translateY(-1px);box-shadow:0 8px 24px #0003;background:#fff}.provider:focus-visible{outline:3px solid #78aaff;outline-offset:3px}.provider svg{width:21px;height:21px;flex:none}
-.divider{display:flex;align-items:center;gap:14px;color:#71839b;font-size:11px;text-transform:uppercase;letter-spacing:1.4px;margin:24px 0}.divider:before,.divider:after{content:"";height:1px;background:#2a3a50;flex:1}
-.notice{font-size:12px;line-height:1.65;color:#8fa1b8;text-align:center;margin:0}.notice strong{color:#c8d7e9;font-weight:600}
-footer{color:#71839b;font-size:11px;text-align:center;margin-top:24px}footer a{color:#a9bad0;text-decoration:none}footer a:hover{text-decoration:underline}
-@media(max-width:480px){body{padding:18px}.card{padding:30px 22px}h1{font-size:25px}}
+@media(max-width:480px){body{padding:18px 18px 16px}.card{padding:30px 22px}h1{font-size:25px}}
 </style>
 </head>
 <body>
 <main class="shell">
-<div class="brand"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 18V6l7 7 7-7v12" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Convex LLC</span></div>
 <section class="card" aria-labelledby="heading">
 <h1 id="heading">Welcome back</h1>
 <p class="sub">Choose a login method below.</p>
-<div class="domain"><span class="dot"></span> All systems operational</div>
+<div class="domain">Organisation sign-in · convex.abrdns.com</div>
 <div class="providers">
 <a class="provider" href="https://accounts.google.com/AccountChooser?hd=convex.abrdns.com" aria-label="Continue with Google">
-<svg viewBox="0 0 48 48" role="img" aria-label="Google"><path fill="#4285F4" d="M43.6 20.5H42V20H24v8h11.3C33.6 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12S17.4 12 24 12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.2-.1-2.3-.4-3.5z"/><path fill="#34A853" d="M6.3 14.7l6.6 4.8C14.7 15.2 19 12 24 12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.6 8.4 6.3 14.7z"/><path fill="#FBBC05" d="M24 44c5.1 0 9.8-1.9 13.3-5.1l-6.2-5.2C29.1 35.2 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.6 5.1C9.4 39.6 16.2 44 24 44z"/><path fill="#EA4335" d="M12.7 28c-.5-1.2-.7-2.6-.7-4s.3-2.8.7-4l-6.6-5.1C4.8 17.3 4 20.5 4 24s.8 6.7 2.1 9.1l6.6-5.1z"/></svg>
+<svg viewBox="0 0 48 48" role="img" aria-label="Google">
+<path fill="#4285F4" d="M43.6 24.5c0-1.4-.1-2.8-.4-4.1H24v7.8h11c-.5 2.5-2 4.6-4.1 6l6.6 5.1c3.9-3.6 6.1-8.8 6.1-14.8z"/>
+<path fill="#34A853" d="M24 44c5.5 0 10.1-1.8 13.5-4.8l-6.6-5.1c-1.8 1.2-4.1 2-6.9 2-5.3 0-9.8-3.6-11.4-8.4l-6.8 5.2C9.2 39.5 16.1 44 24 44z"/>
+<path fill="#FBBC05" d="M12.6 27.7c-.4-1.2-.7-2.4-.7-3.7s.2-2.5.7-3.7l-6.8-5.2C4.6 17.9 4 20.9 4 24s.6 6.1 1.8 8.9l6.8-5.2z"/>
+<path fill="#EA4335" d="M24 12.2c3 0 5.7 1 7.8 3.1l5.8-5.8C34.1 6.1 29.5 4 24 4 16.1 4 9.2 8.5 5.8 15.1l6.8 5.2c1.6-4.8 6.1-8.1 11.4-8.1z"/>
+</svg>
 Continue with Google
 </a>
 <a class="provider" href="https://login.microsoftonline.com/?whr=convex.abrdns.com" aria-label="Continue with Microsoft">
 <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#F35325" d="M1 1h10v10H1z"/><path fill="#81BC06" d="M13 1h10v10H13z"/><path fill="#05A6F0" d="M1 13h10v10H1z"/><path fill="#FFBA08" d="M13 13h10v10H13z"/></svg>
 Continue with Microsoft
 </a>
+</div>
+</section>
+</main>
+<footer><span class="status"><span class="dot" aria-hidden="true"></span>All systems operational</span></footer>
+</body>
 </html>
