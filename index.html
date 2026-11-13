@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Sign in to Convex LLC using your organisation account.">
+  <title>Sign in · Convex LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark;--bg:#0b1220;--panel:#111c2d;--line:#26364b;--muted:#9aabc0;--text:#f4f7fb;--blue:#4f8cff}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:"DM Sans",system-ui,sans-serif;color:var(--text);background:radial-gradient(ellipse at 50% 0%,#1b3150 0,transparent 52%),var(--bg);display:grid;place-items:center;padding:28px}
+    .shell{width:min(100%,440px)}.brand{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:30px;font-size:20px;font-weight:700;letter-spacing:-.5px}
+    .mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(145deg,#78aaff,#3868d9);display:grid;place-items:center;box-shadow:0 8px 28px #3868d955}
+    .mark svg{width:22px;height:22px}.card{background:linear-gradient(180deg,#142238,#101a2a);border:1px solid #2a3b52;border-radius:22px;padding:38px;box-shadow:0 28px 90px #0006}
+    h1{font-size:27px;letter-spacing:-1px;margin:0 0 9px;text-align:center}.sub{color:var(--muted);text-align:center;font-size:14px;line-height:1.6;margin:0 0 30px}
+    .domain{display:inline-flex;align-items:center;gap:7px;border:1px solid #2b405a;background:#17283e;border-radius:999px;padding:7px 12px;font-size:12px;color:#c7d8ee;margin:0 auto 26px;position:relative;left:50%;transform:translateX(-50%)}
+    .dot{width:7px;height:7px;background:#55d6a3;border-radius:50%;box-shadow:0 0 10px #55d6a388}
+    .providers{display:grid;gap:12px}.provider{width:100%;min-height:54px;border:1px solid #34465e;border-radius:12px;background:#f8fafc;color:#172033;font:600 15px inherit;display:flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;transition:transform .15s,box-shadow .15s,background .15s}.provider:hover{transform:translateY(-1px);box-shadow:0 8px 24px #0003;background:#fff}.provider:focus-visible{outline:3px solid #78aaff;outline-offset:3px}.provider svg{width:20px;height:20px}
+    .divider{display:flex;align-items:center;gap:14px;color:#71839b;font-size:11px;text-transform:uppercase;letter-spacing:1.4px;margin:24px 0}.divider:before,.divider:after{content:"";height:1px;background:#2a3a50;flex:1}
+    .notice{font-size:12px;line-height:1.65;color:#8fa1b8;text-align:center;margin:0}.notice strong{color:#c8d7e9;font-weight:600}
+    footer{color:#71839b;font-size:11px;text-align:center;margin-top:24px}footer a{color:#a9bad0;text-decoration:none}footer a:hover{text-decoration:underline}
+    @media(max-width:480px){body{padding:18px}.card{padding:30px 22px}h1{font-size:25px}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <div class="brand"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 18V6l7 7 7-7v12" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Convex LLC</span></div>
+    <section class="card" aria-labelledby="heading">
+      <h1 id="heading">Welcome back</h1>
+      <p class="sub">Sign in to continue to your Convex LLC account.</p>
+      <div class="domain"><span class="dot"></span> Organisation sign-in · abrdns.com</div>
+      <div class="providers">
+        <a class="provider" href="https://accounts.google.com/AccountChooser?hd=abrdns.com" aria-label="Continue with Google">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z" transform="translate(0 5)"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.73 7.18l7.66 5.94c4.47-4.13 7.11-10.2 7.11-17.59z"/><path fill="#FBBC05" d="M10.54 28.59a14.4 14.4 0 0 1 0-9.18l-7.98-6.19a23.9 23.9 0 0 0 0 21.56l7.98-6.19z" transform="translate(0 5)"/><path fill="#34A853" d="M24 48c6.47 0 11.91-2.13 15.88-5.81l-7.66-5.94c-2.13 1.43-4.86 2.28-8.22 2.28-6.26 0-11.57-4.22-13.46-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" transform="translate(0 -5)"/></svg>
+          Continue with Google
+        </a>
+        <a class="provider" href="https://login.microsoftonline.com/?whr=abrdns.com" aria-label="Continue with Microsoft">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#F35325" d="M1 1h10v10H1z"/><path fill="#81BC06" d="M13 1h10v10H13z"/><path fill="#05A6F0" d="M1 13h10v10H1z"/><path fill="#FFBA08" d="M13 13h10v10H13z"/></svg>
+          Continue with Microsoft
+        </a>
+      </div>
+      <div class="divider">Secure access</div>
+      <p class="notice">Use your <strong>Convex LLC organisation account</strong>. Access is managed by your organisation's identity provider.</p>
+    </section>
+    <footer>© <span id="year"></span> Convex LLC · <a href="https://convexllc.org">Organisation website</a></footer>
+  </main>
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
